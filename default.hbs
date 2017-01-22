@@ -1,0 +1,53 @@
+{{! CONFIGURATION OF THIS PAGE IS NOT REQUIRED }}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="alternate" type="application/rss+xml" href="{{@blog.url}}/rss/">
+	<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+	<link rel="prefetch" href="{{@blog.url}}">
+
+	<link rel="stylesheet" type="text/css" href="{{asset "css/theme.min.css"}}" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300%7COxygen:400,300,700%7CMontserrat" rel="stylesheet">
+
+	{{ghost_head}}
+</head>
+<body class="{{body_class}} light">
+
+	{{> drawer}}
+
+	<div id="page-content">
+
+		<div class="mobileheader" id="mobileheader">
+			<!-- <img src="/assets/img/cyg_logo_horiz.png" alt=""> -->
+			<img src="/assets/img/cygnetise_logo_only.png" alt="" width="50">
+			&nbsp;
+			<img src="/assets/img/cygnetise_logo_text_black2.png" alt="" width="100" style="position: relative; top: -12px">
+			<!-- {{#if @blog.logo}}
+			<a href="{{@blog.url}}"><img src="{{@blog.logo}}" class="logo" alt="{{@blog.title}}"></a>
+			{{else}}
+			<h3><a href="{{@blog.url}}">{{@blog.title}}</a></h3>
+			{{/if}} -->
+		</div>
+
+		{{{body}}}
+
+	</div>
+
+	{{ghost_foot}}
+
+	{{! JAVASCRIPT }}
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script async type="text/javascript" src="{{asset "js/theme.min.js"}}"></script>
+
+</body>
+</html>

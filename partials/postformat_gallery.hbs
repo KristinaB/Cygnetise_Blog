@@ -1,0 +1,33 @@
+{{!
+
+	POST FORMAT - GALLERY
+	- Configuration of this file is not required.
+
+}}
+
+	<article class="{{post_class}} postinlist image single">
+		<div class="gradient"></div>
+		<div class="nav">
+			<div class="previous"><i class="fa fa-chevron-left"></i></div>
+			<div class="next"><i class="fa fa-chevron-right"></i></div>
+		</div>
+		<div class="content">
+			{{content}}
+		</div>
+		<div class="inner">
+			<div class="meta">
+				<div class="category">
+					{{tags separator=""}}
+				</div>
+				<h2 class="title"><a href="{{url}}">{{{title}}}</a></h2>
+				<hr>
+			</div>
+			<div class="stats">
+				<div class="author">
+					{{#author}}
+					<a href="{{url}}">{{#if image}} <img src="{{image}}" alt="{{name}}" class="minigravatar">{{/if}}{{name}}</a>
+					{{/author}}
+				</div>
+			</div>
+		</div>
+	</article>

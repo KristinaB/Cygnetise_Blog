@@ -1,0 +1,31 @@
+{{!
+
+	POST FORMAT - AUDIO
+	- Configuration of this file is not required.
+
+}}
+
+	<article class="{{post_class}} postinlist video audio single">
+		<div class="background" {{#if image}}style="background-image:url('{{image}}');"{{/if}}></div>
+		<div class="gradient"></div>
+		<div class="inner">
+			<div class="meta">
+				<div class="category">
+					{{tags separator=""}}
+				</div>
+				<h2 class="title"><a href="{{url}}">{{{title}}}</a></h2>
+				<hr>
+			</div>
+			<div class="play"></div>
+			<div class="stats">
+				<div class="author">
+					{{#author}}
+					<a href="{{url}}">{{#if image}} <img src="{{image}}" alt="{{name}}" class="minigravatar">{{/if}}{{name}}</a>
+					{{/author}}
+				</div>
+			</div>
+		</div>
+		<div class="player">
+			{{content}}
+		</div>
+	</article>

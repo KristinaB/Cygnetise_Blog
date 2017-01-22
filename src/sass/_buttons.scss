@@ -1,0 +1,495 @@
+/* BUTTON STYLES */
+
+.borderbutton {
+	font: 400 14px 'Montserrat', 'Arial', Sans-Serif;
+	padding: 10px 15px;
+	color: #f4f4f4;
+	border: 2px solid #222;
+
+	@include transition(color 0.3s ease-in-out, border 0.3s ease-in-out, opacity 0.3s ease-in-out);
+
+	&.large {
+		padding: 14px 35px;
+	}
+
+	&.rounded {
+		border-radius: 40px;
+	}
+
+	&.uppercase {
+		text-transform: uppercase;
+	}
+
+	&.smallicon i {
+		font-size: 16px;
+		vertical-align: -1px;
+	}
+
+	i {
+		font-size: 20px;
+		vertical-align: -2px;
+	}
+
+	&:hover {
+		border: 2px solid #5c5c5c;
+	}
+
+	&.active {
+		background: #222;
+	}
+
+	&.circle {
+		display: block;
+		width: 42px;
+		padding: 10px 0;
+	}
+}
+
+.socialbutton {
+	display: block;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	border-radius: 3px;
+
+	@include transition(color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out);
+
+	i {
+		vertical-align: -9px;
+	}
+
+	&.twitter {
+		background: $twitter_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $twitter_color;
+		}
+
+		&.nofade:hover {
+			background: darken($twitter_color, 15%);
+		}
+	}
+
+	&.facebook {
+		background: $facebook_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $facebook_color;
+		}
+
+		&.nofade:hover {
+			background: darken($facebook_color, 15%);
+		}
+	}
+
+	&.google {
+		background: $google_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $google_color;
+		}
+
+		&.nofade:hover {
+			background: darken($google_color, 15%);
+		}
+	}
+
+	&.dribbble {
+		background: $dribbble_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $dribbble_color;
+		}
+	}
+
+	&.instagram {
+		background: $instagram_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $instagram_color;
+		}
+	}
+
+	&.github {
+		background: $github_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $github_color;
+		}
+	}
+
+	&.skype {
+		background: $skype_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $skype_color;
+		}
+	}
+
+	&.linkedin {
+		background: $linkedin_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $linkedin_color;
+		}
+	}
+
+	&.pinterest {
+		background: $pinterest_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $pinterest_color;
+		}
+	}
+
+	&.youtube {
+		background: $youtube_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $youtube_color;
+		}
+	}
+
+	&.tumblr {
+		background: $tumblr_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $tumblr_color;
+		}
+	}
+
+	&.rss {
+		background: $rss_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: $rss_color;
+		}
+	}
+
+	&.reddit {
+		background: $reddit_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: #fff;
+		}
+
+		&.nofade:hover {
+			background: darken($reddit_color, 15%);
+		}
+	}
+
+	&.linkedin {
+		background: $linkedin_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: #fff;
+		}
+
+		&.nofade:hover {
+			background: darken($linkedin_color, 15%);
+		}
+	}
+
+	&.pinterest {
+		background: $pinterest_color;
+
+		i {
+			color: #fff;
+		}
+
+		&:hover i {
+			color: #fff;
+		}
+
+		&.nofade:hover {
+			background: darken($pinterest_color, 15%);
+		}
+	}
+
+	&:hover {
+		background: #fff;
+	}
+}
+
+.socialdark {
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding-left: 0;
+	text-align: center;
+	border-radius: 3px;
+	background: #181818;
+
+	@include transition(color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out);
+
+	i {
+		font-size: 14px;
+		vertical-align: -6px;
+		color: #fff;
+	}
+
+	&.twitter:hover {
+		background: $twitter_color;
+	}
+
+	&.facebook:hover {
+		background: $facebook_color;
+	}
+
+	&.google:hover {
+		background: $google_color;
+	}
+
+	&.dribbble:hover {
+		background: $dribbble_color;
+	}
+
+	&.instagram:hover {
+		background: $instagram_color;
+	}
+
+	&.github:hover {
+		background: $github_color;
+	}
+
+	&.skype:hover {
+		background: $skype_color;
+	}
+
+	&.linkedin:hover {
+		background: $linkedin_color;
+	}
+
+	&.pinterest:hover {
+		background: $pinterest_color;
+	}
+
+	&.youtube:hover {
+		background: $youtube_color;
+	}
+
+	&.tumblr:hover {
+		background: $tumblr_color;
+	}
+
+	&.rss:hover {
+		background: $rss_color;
+	}
+
+	&.reddit:hover {
+		background: $reddit_color;
+	}
+}
+
+.sociallight {
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding-left: 0;
+	text-align: center;
+	border-radius: 3px;
+	background: #eee;
+
+	@include transition(color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out);
+
+	i {
+		font-size: 14px;
+		vertical-align: -6px;
+		color: #1d1d1d;
+	}
+
+	&.twitter:hover {
+		background: $twitter_color;
+	}
+
+	&.facebook:hover {
+		background: $facebook_color;
+	}
+
+	&.google:hover {
+		background: $google_color;
+	}
+
+	&.dribbble:hover {
+		background: $dribbble_color;
+	}
+
+	&.instagram:hover {
+		background: $instagram_color;
+	}
+
+	&.github:hover {
+		background: $github_color;
+	}
+
+	&.skype:hover {
+		background: $skype_color;
+	}
+
+	&.linkedin:hover {
+		background: $linkedin_color;
+	}
+
+	&.pinterest:hover {
+		background: $pinterest_color;
+	}
+
+	&.youtube:hover {
+		background: $youtube_color;
+	}
+
+	&.tumblr:hover {
+		background: $tumblr_color;
+	}
+
+	&.rss:hover {
+		background: $rss_color;
+	}
+
+	&.reddit:hover {
+		background: $reddit_color;
+	}
+
+	&:hover {
+		i {
+			color: #fff;
+		}
+	}
+}
+
+.sharebutton {
+	font: 400 14px 'Montserrat', 'Arial', Sans-Serif;
+	display: block;
+	width: 47%;
+	margin-top: 25px;
+	padding: 13px 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 90px;
+	background: #242424;
+
+	@include transition(background 0.2s ease-in-out);
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		margin-top: 0;
+	}
+
+	i {
+		margin-right: 10px;
+	}
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+	}
+
+	&.twitter {
+		background: $twitter_color;
+
+		&:hover {
+			background: darken($twitter_color, 20%);
+		}
+	}
+
+	&.facebook {
+		background: $facebook_color;
+
+		&:hover {
+			background: darken($facebook_color, 20%);
+		}
+	}
+
+	&.google {
+		background: $google_color;
+
+		&:hover {
+			background: darken($google_color, 20%);
+		}
+	}
+
+	&.reddit {
+		background: $reddit_color;
+
+		&:hover {
+			background: darken($reddit_color, 20%);
+		}
+	}
+
+	&.linkedin {
+		background: $linkedin_color;
+
+		&:hover {
+			background: darken($linkedin_color, 20%);
+		}
+	}
+
+	&.pinterest {
+		background: $pinterest_color;
+
+		&:hover {
+			background: darken($pinterest_color, 20%);
+		}
+	}
+
+}
+

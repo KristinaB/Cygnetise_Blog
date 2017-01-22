@@ -1,0 +1,51 @@
+{{!
+
+	POST TEMPLATE
+	- Configuration of this file is not required.
+
+}}
+{{!< default}}
+
+	{{#post}}
+
+		{{#has tag="leftsidebar, rightsidebar, fullwidth"}}
+			{{#has tag="leftsidebar"}}
+				<div class="wrapper leftsidebar">
+			{{/has}}
+			{{#has tag="rightsidebar"}}
+				<div class="wrapper rightsidebar">
+			{{/has}}
+			{{#has tag="fullwidth"}}
+				<div class="wrapper fullwidth">
+			{{/has}}
+		{{else}}
+			<div class="wrapper">
+		{{/has}}
+
+			<div class="{{post_class}}">
+
+				<article>
+
+					{{> header_post}}
+
+					{{> post_title}}
+
+					<div class="postbody">
+						{{content}}
+					</div>
+
+					{{> post_footer}}
+
+					{{> widget_authorinfo}}
+
+				</article>
+
+				{{> post_lower}}
+
+			</div>
+
+			{{> sidebar_post}}
+
+		</div>
+
+	{{/post}}

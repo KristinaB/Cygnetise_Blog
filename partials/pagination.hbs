@@ -1,0 +1,23 @@
+{{!
+
+	PAGINATION
+	- Configuration of this file is not required.
+
+}}
+
+	<div class="wrapper">
+		<nav class="pagination">
+			{{#if next}}
+			<a href="{{page_url next}}" class="borderbutton pageicon rounded uppercase large smallicon previous"><i class="fa fa-chevron-left"></i><span>Older Posts</span></a>
+			{{/if}}
+			{{#if next}}
+			<a href="#" id="statusbutton" class="borderbutton rounded uppercase large"><i class="fa fa-align-left"></i>More Posts</a>
+			{{else}}
+			<a href="#" id="statusbutton" class="borderbutton rounded uppercase large nomoreposts"><i class="fa fa-times"></i>No More Posts</a>
+			{{/if}}
+			{{#if prev}}
+			<a href="{{page_url prev}}" class="borderbutton pageicon rounded uppercase large smallicon next"><span>Newer Posts</span><i class="fa fa-chevron-right"></i></a>
+			{{/if}}
+			<div style="clear:both;"></div>
+		</nav>
+	</div>

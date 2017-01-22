@@ -1,0 +1,20 @@
+{{!
+
+	WIDGET - AUTHOR INFO
+	- Configuration of this file is not required.
+
+}}
+
+	<div class="widget authorinfo">
+		<div class="info">
+			{{#if author.image}}
+			<a href="{{author.url}}" class="profile gravatar"><img src="{{author.image}}" alt="{{author.name}}"></a>
+			{{/if}}
+			<div class="meta">
+				<span class="title">AUTHOR</span>
+				<h3>{{author}}</h3>
+			</div>
+		</div>
+		<p>{{author.bio}}</p>
+		{{> social_author}}
+	</div>

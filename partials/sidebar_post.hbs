@@ -1,0 +1,22 @@
+{{!
+
+	SIDEBAR - POST
+	- Configuration of this file is optional.
+
+}}
+
+	<div class="sidebar">
+		<div class="widget blog_info">
+			{{#if @blog.logo}}
+			<a href="{{@blog.url}}"><img src="{{@blog.logo}}" class="logo" alt="{{@blog.title}}"></a>
+			{{else}}
+			<h3><a href="{{@blog.url}}">{{@blog.title}}</a></h3>
+			{{/if}}
+		</div>
+
+		{{! ADD, REMOVE OR MOVE THE WIDGET TAGS BELOW TO CONFIGURE THE SIDEBAR AREA }}
+		{{> widget_authorinfo}}
+		{{> widget_share}}
+		{{> widget_copyright}}
+
+	</div>

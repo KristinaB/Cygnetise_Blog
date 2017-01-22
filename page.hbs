@@ -1,0 +1,38 @@
+{{!
+
+	PAGE TEMPLATE
+	- Configuration of this file is not required.
+
+}}
+{{!< default}}
+
+	{{#post}}
+
+	<div class="wrapper">
+
+		<div class="{{post_class}}">
+
+			<article>
+
+				{{> header_post}}
+
+				{{> post_title}}
+
+				<div class="postbody">
+					{{content}}
+					<div class="permalink">
+						Permalink: <a href="{{@blog.url}}{{url}}">{{@blog.url}}{{url}}</a>
+					</div>
+				</div>
+
+			</article>
+
+			{{> post_lower}}
+
+		</div>
+
+		{{> sidebar_page}}
+
+	</div>
+
+	{{/post}}

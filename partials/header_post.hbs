@@ -1,0 +1,27 @@
+{{!
+
+	HEADER - POST
+	- Configuration of this file is not required.
+
+}}
+
+	{{#has tag="video, gallery"}}
+		{{#has tag="video"}}
+		<header class="video">
+			{{content}}
+		</header>
+		{{/has}}
+		{{#has tag="gallery"}}
+		<header class="gallery">
+			<div class="nav">
+				<div class="previous"><i class="fa fa-chevron-left"></i></div>
+				<div class="next"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			{{content}}
+		</header>
+		{{/has}}
+	{{else}}
+		{{#if image}}
+		<header style="background-image:url('{{image}}');"></header>
+		{{/if}}
+	{{/has}}

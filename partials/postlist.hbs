@@ -1,0 +1,40 @@
+{{!
+
+	POST LIST
+	- Configuration of this file is not required.
+
+}}
+
+	<div class="wrapper">
+		<div id="postlist" class="postlist">
+			<div class="postinlist template"></div>
+			{{#foreach posts}}
+				{{#has tag="imagebg, double, audio, video, gallery, image, quote, status"}}
+					{{#has tag="imagebg, image"}}
+						{{> postformat_imagebg}}
+					{{/has}}
+					{{#has tag="double"}}
+						{{> postformat_double}}
+					{{/has}}
+					{{#has tag="audio"}}
+						{{> postformat_audio}}
+					{{/has}}
+					{{#has tag="video"}}
+						{{> postformat_video}}
+					{{/has}}
+					{{#has tag="gallery"}}
+						{{> postformat_gallery}}
+					{{/has}}
+					{{#has tag="quote"}}
+						{{> postformat_quote}}
+					{{/has}}
+					{{#has tag="status"}}
+						{{> postformat_status}}
+					{{/has}}
+				{{else}}
+					{{> postformat_standard}}
+				{{/has}}
+			{{/foreach}}
+		</div>
+	</div>
+	{{pagination}}

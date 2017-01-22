@@ -1,0 +1,33 @@
+{{!
+
+	POST FORMAT - STANDARD
+	- Configuration of this file is not required.
+
+}}
+
+	<article class="{{post_class}} postinlist standard single">
+		{{#if image}}
+		<div class="header">
+			<a href="{{url}}" class="overlay">
+				<span>Read More</span>
+			</a>
+			<img src="{{image}}" class="lazy header" alt="{{{title}}}">
+		</div>
+		{{/if}}
+		<div class="inner">
+			<div class="category">
+				{{tags separator=""}}
+			</div>
+			<h2 class="title"><a href="{{url}}">{{{title}}}</a></h2>
+			<a href="{{url}}" class="date">{{date format="Do MMMM YYYY"}}</a>
+			<hr>
+			<p class="excerpt">{{excerpt characters="230"}}…</p>
+			<div class="stats">
+				<div class="author">
+					{{#author}}
+					<a href="{{url}}">{{#if image}} <img src="{{image}}" alt="{{name}}" class="minigravatar">{{/if}}{{name}}</a>
+					{{/author}}
+				</div>
+			</div>
+		</div>
+	</article>

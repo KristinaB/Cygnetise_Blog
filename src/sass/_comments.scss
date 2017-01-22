@@ -1,0 +1,26 @@
+/* COMMENTS STYLES */
+
+#comments {
+	display: none;
+	cursor: pointer;
+}
+
+.commentwrap {
+	padding: 0;
+
+	& > .comment {
+		border-bottom: 1px solid #1b1b1b;
+	}
+}
+
+#disqus_thread {
+	color: #fff !important;
+
+	p {
+		color: #fff !important;
+	}
+
+	a {
+		color: $accent_color;
+	}
+}
