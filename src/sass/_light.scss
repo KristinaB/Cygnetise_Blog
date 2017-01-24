@@ -1,7 +1,7 @@
 /* LIGHT THEME STYLES */
 
 body.light {
-	background: #f5f5f5;
+	background: #ffffff;
 
 	#toggle span {
 		background-color: #272727;
@@ -131,6 +131,7 @@ body.light {
 
 	#page-content .sidebar {
 		float: right;
+		display: none;
 	}
 
 	.comment-respond input[type=text]:active,
